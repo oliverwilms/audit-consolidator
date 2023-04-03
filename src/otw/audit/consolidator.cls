@@ -42,6 +42,7 @@ Property RoutineSpec As %String(MAXLEN = 512);
 
 Property StartupClientIPAddress As %String(MAXLEN = 128);
 
+/// Property Status As %Status [ InitialExpression = 1 ];
 Property Status As %String(MAXLEN = 2048);
 
 Property SystemID As %String(MAXLEN = 128) [ Required ];
