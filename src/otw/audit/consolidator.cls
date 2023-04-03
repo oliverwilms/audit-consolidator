@@ -42,7 +42,6 @@ Property RoutineSpec As %String(MAXLEN = 512);
 
 Property StartupClientIPAddress As %String(MAXLEN = 128);
 
-/// Property Status As %Status [ InitialExpression = 1 ];                                            
 Property Status As %String(MAXLEN = 2048);
 
 Property SystemID As %String(MAXLEN = 128) [ Required ];
@@ -53,7 +52,6 @@ Property UserInfo As %String(MAXLEN = 64);
 
 Property Username As %SYS.AuditString(MAXLEN = 160);
 
-/*
 ClassMethod Exists(
 	UTCTimeStamp As %String = "",
 	SystemID As %String = "",
@@ -61,9 +59,22 @@ ClassMethod Exists(
 	ByRef Audit As %ObjectHandle,
 	ByRef Status As %Status) As %Boolean
 {
-	Quit 0
+	Set Audit = $$$NULLOREF
+	Set Status = $$$OK
+	Set tData = 0
+	If (UTCTimeStamp '= "") Set tData = tData + 1
+	If (SystemID '= "") Set tData = tData + 2
+	If (AuditIndex '= 0) Set tData = tData + 4
+	If (tData < 7) {
+		Set tMessage = "UTCTimeStamp, SystemID, and AuditIndex are required."
+		Set Status = $$$ERROR($$$GeneralError,tMessage)
+		Quit 0
+	}
+	Set tID = UTCTimeStamp_"||"_SystemID_"||"_AuditIndex
+	Set Audit = ..%OpenId(tID)
+	Quit 1
 }
-*/
+
 /// Flags - Bit 0 - Do not import records, just return count
 /// Note: On failure, no records will be imported
 ClassMethod Import(
