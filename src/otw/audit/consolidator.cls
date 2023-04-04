@@ -79,11 +79,56 @@ ClassMethod Exists(
 /// Flags - Bit 0 - Do not import records, just return count
 /// Note: On failure, no records will be imported
 ClassMethod Import(
-	FileName As %String,
+	FileName As %String = "NTX-LT162748_auditexport.xml",
 	ByRef NumImported As %Integer,
 	Flags As %Integer = 0) As %Status
 {
-	Quit 1
+	Set pDebug = 1
+	Set pMaxLines = -1
+	If ($Get(FileName) = "") {
+		Set tMessage = "Filename is required."
+		Set tSC = $$$ERROR($$$GeneralError,tMessage)
+		Quit tSC
+	}
+	Set tSC = $$$OK
+	If ##class(%File).Exists(FileName) {
+		Set tReader = ##class(%XML.Reader).%New()
+		Set tSC = tReader.OpenFile(FileName)
+		If $$$ISERR(tSC) Quit tSC
+		Do tReader.Correlate("Audit","otw.audit.consolidator")
+		#dim Audit As otw.audit.consolidator
+		#dim tExistingAudit As otw.audit.consolidator
+		While tReader.Next(.Audit,.tSC) {
+			If $$$ISERR(tSC) { Quit }
+			Set tID = Audit.%Id()
+			Set tExistingAudit = ##class(otw.audit.consolidator).%OpenId(tID)
+			If $IsObject(tExistingAudit) {
+				Set tSC = tExistingAudit.%Delete()
+				If $$$ISERR(tSC) { Quit }
+			}
+			Set tSC = Audit.%Save()
+			If $$$ISERR(tSC) { Quit }
+		}
+		If $$$ISERR(tSC) Quit tSC
+	}
+	Quit $$$OK
+
+	##sql(START TRANSACTION)
+	Set $ZT="ERROR" 
+	Write 1,!
+	SET ^otwaudit(1,2,3)=100
+	Write 2,!
+	//SET ^otwaudit(2,3,4)=error
+	Write 3,!
+	SET ^otwaudit(1,1)=200
+	##sql(COMMIT WORK)
+	Write !,"Transaction Committed"
+	Quit tSC
+ERROR
+	##sql(ROLLBACK WORK)
+	Write !,"Transaction failed."
+	Set tSC = $$$ERROR($$$GeneralError,"Transaction failed.")
+	Quit tSC
 }
 
 Storage NewStorage1
