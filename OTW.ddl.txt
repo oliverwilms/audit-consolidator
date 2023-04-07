@@ -1,0 +1,49 @@
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- File: c:\intersystems\iris\mgr\user\OTW.ddl
+-- IRIS SQL DDL Export
+-- Date: 06 Apr 2023 19:49:19
+-- Export of: ROLES TABLES/VIEWS PRIVILEGES
+-- From Namespace: USER
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+-- Export of all Role definitions --
+
+-- Export of all Definitions and Privileges for 'otw_audit.consolidator1' --
+
+CREATE TABLE otw_audit.consolidator1(
+    %PUBLICROWID,
+    AuditIndex                BIGINT NOT NULL,
+    Authentication            VARCHAR(128) %DESCRIPTION 'Property Authentication As Security.Datatype.Authentication;',
+    CSPSessionID              VARCHAR(16),
+    ClientExecutableName      VARCHAR(128),
+    ClientIPAddress           VARCHAR(128),
+    Description               VARCHAR(128),
+    Event                     VARCHAR(64),
+    EventData                 VARCHAR(16384),
+    EventSource               VARCHAR(64),
+    EventType                 VARCHAR(64),
+    GroupName                 VARCHAR(64),
+    JobId                     VARCHAR(16),
+    JobNumber                 INTEGER,
+    Namespace                 VARCHAR(128),
+    OSUsername                VARCHAR(16),
+    Pid                       VARCHAR(16),
+    Roles                     VARCHAR(2048),
+    RoutineSpec               VARCHAR(512),
+    StartupClientIPAddress    VARCHAR(128),
+    Status                    VARCHAR(2048) %DESCRIPTION 'Property Status As %Status [ InitialExpression = 1 ];',
+    SystemID                  VARCHAR(128) NOT NULL,
+    UTCTimeStamp              VARCHAR(64) NOT NULL,
+    UserInfo                  VARCHAR(64),
+    Username                  VARCHAR(160)
+)
+WITH
+    %CLASSPARAMETER DEFAULTGLOBAL = '^otw.audit'
+GO
+
+CREATE UNIQUE INDEX uniq ON otw_audit.consolidator1(UTCTimeStamp,SystemID,AuditIndex)
+GO
+
+CREATE BITMAP INDEX usr ON otw_audit.consolidator1(Username)
+GO
+
