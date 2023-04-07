@@ -26,9 +26,12 @@ ClassMethod AuditExportToCSV(
 	ByRef cnt As %Integer = 0) As %Status
 {
 #define quote(%val) $zutil(144,1,%val)
+#define quotes(%val) $zutil(144,1,%val)
   set filename="audit.CSV"
   set file=##class(%File).%New(dir_filename)
+  set file.LineTerminator=$c(10)
   do file.Open("WSN")
+
 #; allow selectiv export  
   set col="AuditIndex,Authentication,CSPSessionID,ClientExecutableName,ClientIPAddress"_
         ",Description,Event,EventData,EventSource,EventType,GroupName,JobId,JobNumber"_
@@ -55,10 +58,7 @@ ClassMethod AuditExportToCSV(
     if tSC {
       while rset.Next() {
         for i=1:1:colcnt {
-          set val=rset.GetData(i)
-#; replace <CR><LF> by §§ 
-          if '$isvalidnum(val) set val=""""_$tr(val,$c(13,10),"§§")_""""
-          set tSC=file.Write(val_$s(i<colcnt:",",1:""))   
+          set tSC=file.Write($$$quotes(rset.GetData(i))_$s(i<colcnt:",",1:"")) 
           quit:'tSC
           }
         do file.WriteLine("")
