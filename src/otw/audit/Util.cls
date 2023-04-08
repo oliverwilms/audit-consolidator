@@ -90,7 +90,51 @@ ClassMethod AuditExportToCSV(
 
 ClassMethod AuditTransfer() As %Status
 {
-	Quit 1
+  set (min,max)=0
+  &SQL(select MIN(AuditIndex),MAX(AuditIndex) into :min,:max from %SYS.Audit)
+  if SQLCODE b  i 0
+  if start=min set start=min
+  if (last>max)!('last) set last=max
+  #sqlcompile select=Display
+  for id=start:1:max {
+    kill au
+    &SQL(select AuditIndex, Authentication, CSPSessionID, ClientExecutableName, 
+     ClientIPAddress, Description, Event, EventData, EventSource, 
+     EventType, GroupName, JobId, JobNumber, Namespace,
+     OSUsername, Pid, Roles, RoutineSpec, StartupClientIPAddress, 
+     Status, SystemID, UTCTimeStamp, UserInfo, Username 
+        into :au() from %SYS.Audit where AuditIndex = :id)
+    if SQLCODE<0 b  i 1
+#; not found    
+    if SQLCODE=100  continue    
+    &SQL(DELETE from otwaudit.cloud where AuditIndex = :id )
+    if SQLCODE<0 b  i 2
+#; modify columns
+#; ClientIPAddress
+    if au(6)["." set au(6)="*** skipped ****"
+#; StartupClientIPAddress    
+    if au(20)["." set au(20)=".."_$p(au(20),".",3,4)
+    set sql="INSERT into otwaudit.cloud ("_
+      "AuditIndex, Authentication, CSPSessionID, ClientExecutableName,"_ 
+      "ClientIPAddress, Description, Event, EventData, EventSource, "_
+      "EventType, GroupName, JobId, JobNumber, Namespace,"_
+      "OSUsername, Pid, Roles, RoutineSpec, StartupClientIPAddress,"_ 
+      "Status, SystemID, UTCTimeStamp, UserInfo, Username) VALUES ("_
+      "?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+    set rs=##class(%ResultSet).%New()
+    set tSC=rs.Prepare(sql)
+    b:'tSC  i 3
+    set tSC=rs.Execute(au(2),au(3),au(4),au(5),
+      au(6),au(7),au(8),au(9),au(10),
+      au(11),au(12),au(13),au(14),au(15),
+      au(16),au(17),au(18),au(19),au(20),
+      au(21),au(22),au(23),au(24),au(25))
+#; b  i 5
+   write id," "
+  }
+ if tSC,SQLCODE<0 set tSC=##class(%Exception.SQL).CreateFromSQLCODE(SQLCODE,$g(%msg)) 
+ quit tSC
 }
+
 
 }
