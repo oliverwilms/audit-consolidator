@@ -6,6 +6,10 @@ https://portal.sql-contest.isccloud.io/account/login
 
 https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=ECLOUD_intro
 
+## Cloud Storage API
+
+https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=ECLOUD_api
+
 ## Importing SQL Code
 
 https://docs.intersystems.com/iris20223/csp/docbook/Doc.View.cls?KEY=GSQL_import
