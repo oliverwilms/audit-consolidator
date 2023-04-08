@@ -88,4 +88,9 @@ ClassMethod AuditExportToCSV(
   quit tSC
 }
 
+ClassMethod AuditTransfer() As %Status
+{
+	Quit 1
+}
+
 }
