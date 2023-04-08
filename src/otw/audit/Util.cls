@@ -89,7 +89,7 @@ ClassMethod AuditExportToCSV(
 }
 
 /// Source: %SYS.Audit
-/// Target: otw.audit.consolidator
+/// Target: otw.audit.consolidator / otw_audit.consolidator
 ClassMethod AuditTransfer(
 	start As %Integer = 1,
 	ByRef last As %Integer = 0) As %Status
@@ -111,14 +111,14 @@ ClassMethod AuditTransfer(
     if SQLCODE<0 b  i 1
 #; not found    
     if SQLCODE=100  continue    
-    &SQL(DELETE from otw.audit.consolidator where AuditIndex = :id )
+    &SQL(DELETE from otw_audit.consolidator where AuditIndex = :id )
     if SQLCODE<0 b  i 2
 #; modify columns
 #; ClientIPAddress
     if au(6)["." set au(6)="*** skipped ****"
 #; StartupClientIPAddress    
     if au(20)["." set au(20)=".."_$p(au(20),".",3,4)
-    set sql="INSERT into otw.audit.consolidator ("_
+    set sql="INSERT into otw_audit.consolidator ("_
       "AuditIndex, Authentication, CSPSessionID, ClientExecutableName,"_ 
       "ClientIPAddress, Description, Event, EventData, EventSource, "_
       "EventType, GroupName, JobId, JobNumber, Namespace,"_
