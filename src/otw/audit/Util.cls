@@ -95,7 +95,7 @@ ClassMethod AuditTransfer(
   set (min,max)=0
   &SQL(select MIN(AuditIndex),MAX(AuditIndex) into :min,:max from %SYS.Audit)
   if SQLCODE b  i 0
-  if start=min set start=min
+  if start<min set start=min
   if (last>max)!('last) set last=max
   #sqlcompile select=Display
   for id=start:1:max {
