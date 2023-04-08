@@ -2,6 +2,9 @@
 
 https://portal.sql-contest.isccloud.io/account/login
 
+## Cloud Storage Adapter
+
+https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=ECLOUD_intro
 
 ## Importing SQL Code
 
