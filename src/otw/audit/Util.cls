@@ -88,7 +88,9 @@ ClassMethod AuditExportToCSV(
   quit tSC
 }
 
-ClassMethod AuditTransfer() As %Status
+ClassMethod AuditTransfer(
+	start As %Integer = 1,
+	ByRef last As %Integer = 0) As %Status
 {
   set (min,max)=0
   &SQL(select MIN(AuditIndex),MAX(AuditIndex) into :min,:max from %SYS.Audit)
@@ -135,6 +137,5 @@ ClassMethod AuditTransfer() As %Status
  if tSC,SQLCODE<0 set tSC=##class(%Exception.SQL).CreateFromSQLCODE(SQLCODE,$g(%msg)) 
  quit tSC
 }
-
 
 }
