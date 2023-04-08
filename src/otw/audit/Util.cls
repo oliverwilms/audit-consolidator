@@ -3,11 +3,29 @@ Class otw.audit.Util
 
 ClassMethod AuditExport(pDaysToKeep = 0) As %Status
 {
+	Set d = "-"
+	Set pBeginDateTime = ""
+	Set pEndDateH = +$Horolog - pDaysToKeep  // 66572
+	Set pEndDate8 = $ZDate(pEndDateH,8)  // 20230408
+	Set pEndDateTime = $Extract(pEndDate8,1,4)_d_$Extract(pEndDate8,5,6)_d_$Extract(pEndDate8,7,8)
+	Quit ..AuditExportByDates(pBeginDateTime,pEndDateTime)
+}
+
+ClassMethod AuditExportByDates(
+	pBeginDateTime = "",
+	pEndDateTime = "") As %Status
+{
+	Set u = "_"
 	Set tSC = $$$OK
 	Set tHost = $SYSTEM.INetInfo.LocalHostName() 
-	Set pBeginDateTime = ""
-	Set pEndDateTime = ""
-	Set pFileName = tHost_"_auditexport.xml"
+	Set pFileName = tHost
+	If (pBeginDateTime '= "") {
+		Set pFileName = pFileName_u_pBeginDateTime
+	}
+	If (pEndDateTime '= "") {
+		Set pFileName = pFileName_u_pEndDateTime
+	}
+	Set pFileName = pFileName_u_"auditexport.xml"
 	Set pFlags = 0
 	Set tExists = ##class(%File).Exists(pFileName)
 	If tExists {
