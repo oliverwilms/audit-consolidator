@@ -3,7 +3,6 @@ Class otw.audit.AuditExportTask Extends %SYS.Task.Definition
 
 Parameter TaskName = "Export Audit Data";
 
-
 /// Days to keep in %SYS.Audit
 Property DaysToKeep As %ZEN.Datatype.string [ InitialExpression = 0 ];
 
@@ -27,7 +26,13 @@ ClassMethod FindMyID() As %String
 	Set objTask.NameSpace = "%SYS"
 	Set objTask.RunAsUser = "_SYSTEM"
 	Set objTask.TaskClass = "otw.audit.AuditExportTask"
-	Set objTask.TimePeriod = 5  // "On Demand"
+	Set objTask.TimePeriod = 0  // (DISPLAYLIST = ",Daily,Weekly,Monthly,Monthly Special,Run After,On Demand", VALUELIST = ",0,1,2,3,4,5")
+	//Set objTask.TimePeriodEvery=1
+	Set objTask.TimePeriodDay = ""
+	Set objTask.DailyFrequency = 0  // (DISPLAYLIST = ",Once,Several", VALUELIST = ",0,1")
+	//Set objTask.DailyFrequencyTime=0  // (DISPLAYLIST = ",Minutes,Hourly", VALUELIST = ",0,1")
+	Set objTask.DailyIncrement = 1  // Run every # 
+	Set objTask.DailyStartTime = 120
 	Set tSC = objTask.%Save()
 	Set pResult = objTask.%Id()
 	Quit pResult
