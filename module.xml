@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+  <Document name="audit-consolidator.ZPM">
+    <Module>
+      <Name>audit-consolidator</Name>
+      <Version>0.0.1</Version>
+      <Description>IRIS Audit Data Consolidator</Description>
+      <Packaging>module</Packaging>
+      <SourcesRoot>src</SourcesRoot>
+      <Resource Name="otw.audit.PKG"/>
+    </Module>
+  </Document>
+</Export>
