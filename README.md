@@ -1,5 +1,10 @@
 # audit-consolidator
 
+## Run Task Now plus Schedule Task to Run Daily
+
+%SYS>w ##class(otw.audit.AuditExportTask).RunNow()
+1
+
 https://portal.sql-contest.isccloud.io/account/login
 
 ## Cloud Storage Adapter
