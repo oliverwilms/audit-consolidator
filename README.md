@@ -26,3 +26,7 @@ https://docs.intersystems.com/iris20223/csp/docbook/Doc.View.cls?KEY=GSQL_esql
 ## Write to AWS S3 bucket
 
 https://community.intersystems.com/post/cache-writing-aws-s3-bucket
+
+## AWS S3 Free Tier
+
+As part of the AWS Free Tier, you can get started with Amazon S3 for free. Upon sign-up, new AWS customers receive 5GB of Amazon S3 storage in the S3 Standard storage class; 20,000 GET Requests; 2,000 PUT, COPY, POST, or LIST Requests; and 100 GB of Data Transfer Out each month.
