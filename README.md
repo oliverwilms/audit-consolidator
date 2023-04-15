@@ -13,6 +13,8 @@ I like to export audit data from each IRIS instance and consolidate audit data i
 %SYS>w ##class(otw.audit.AuditExportTask).RunNow()
 1
 
+I created a persistent consolidator class to hold the audit data from ALL my IRIS instances.
+
 https://portal.sql-contest.isccloud.io/account/login
 
 ## Cloud Storage Adapter
