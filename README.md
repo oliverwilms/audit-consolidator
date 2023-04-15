@@ -19,6 +19,17 @@ The Audit Export creates an XML file. I created a persistent consolidator class 
 
 ## Consolidator Import Task
 
+## Import SQL
+
+LOAD DATA FROM FILE 'C://InterSystems/IRIS/mgr/audit.CSV'
+INTO otw_audit.consolidator1
+USING {
+ "from":{
+    "file":{
+     "header":true
+   }}}
+go
+
 https://portal.sql-contest.isccloud.io/account/login
 
 ## Cloud Storage Adapter
