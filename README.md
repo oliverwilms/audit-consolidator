@@ -1,5 +1,9 @@
 # audit-consolidator
 
+Audit database logs many events such as login failures for example. It cxan be configured to log successful logins as well. 
+
+Why is this important? We have a rule to disable a user account if they ave not logged in for a certain number of days.
+
 ## Run Task Now plus Schedule Task to Run Daily
 
 %SYS>w ##class(otw.audit.AuditExportTask).RunNow()
