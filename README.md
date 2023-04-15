@@ -1,6 +1,6 @@
 # audit-consolidator
 
-Audit database logs many events such as login failures for example. It can be configured to log successful logins as well. 
+IRIS Audit database logs many events such as login failures for example. It can be configured to log successful logins as well. 
 
 Why is this important? We have a rule to disable a user account if they ave not logged in for a certain number of days.
 
