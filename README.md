@@ -8,12 +8,16 @@ We have IRIS clusters with many IRIS instances. I like to run queries against au
 
 I like to export audit data from each IRIS instance and consolidate audit data into ONE database table to run queries against the consolidated audit data.
 
-## Command to run Audit Export Task now AND schedule the task to run it daily
+## Audit Export Task
+
+Command to run Audit Export Task now AND schedule the task to run it daily
 
 %SYS>w ##class(otw.audit.AuditExportTask).RunNow()
 1
 
-I created a persistent consolidator class to hold the audit data from ALL my IRIS instances.
+The Audit Export creates an XML file. I created a persistent consolidator class to hold the audit data from ALL my IRIS instances.
+
+## Consolidator Import Task
 
 https://portal.sql-contest.isccloud.io/account/login
 
