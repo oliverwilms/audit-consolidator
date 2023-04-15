@@ -8,7 +8,7 @@ We have IRIS clusters with many IRIS instances. I like to run queries against au
 
 I like to export audit data from each IRIS instance and consolidate audit data into ONE database table to run queries against the consolidated audit data.
 
-## Command to run Audit Export Task now AND schgedule to run it daily
+## Command to run Audit Export Task now AND schedule the task to run it daily
 
 %SYS>w ##class(otw.audit.AuditExportTask).RunNow()
 1
