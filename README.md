@@ -19,6 +19,10 @@ The Audit Export creates an XML file. I created a persistent consolidator class 
 
 ## Consolidator Import Task
 
+## Run DDL in IRIS Cloud SQL
+
+A sample DDL file is included in this repo.
+
 ## Import SQL
 
 LOAD DATA FROM FILE 'C://InterSystems/IRIS/mgr/audit.CSV'
