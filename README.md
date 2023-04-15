@@ -6,7 +6,7 @@ Why is this important? We have a rule to disable a user account if they ave not 
 
 We have IRIS clusters with many IRIS instances. I like to run queries against audit data from ALL IRIS instances and identify user accounts which have not looged into ANY IRIS instance.
 
-I like to export audit data from each IRIS instance and consolidate audit data into ONE database table to run queries gainst the consolidated audit data.
+I like to export audit data from each IRIS instance and consolidate audit data into ONE database table to run queries against the consolidated audit data.
 
 ## Run Task Now plus Schedule Task to Run Daily
 
