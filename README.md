@@ -4,7 +4,7 @@ Many thanks to Robert Cemper for his support with bringing this idea to reality.
 
 IRIS Audit database logs many events such as login failures for example. It can be configured to log successful logins as well. 
 
-Why is this important? We have a rule to disable a user account if they ave not logged in for a certain number of days.
+Why is this important? We have a rule to disable a user account if they have not logged in for a certain number of days.
 
 We have IRIS clusters with many IRIS instances. I like to run queries against audit data from ALL IRIS instances and identify user accounts which have not looged into ANY IRIS instance.
 
