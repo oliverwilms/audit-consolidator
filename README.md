@@ -21,6 +21,8 @@ The Audit Export creates an XML file. I created a persistent consolidator class 
 
 ## Consolidator Import Task
 
+We created a classMethod to import an XML file into the consolidator table. We masked IP address due to security reasons.
+
 ## Run DDL in IRIS Cloud SQL
 
 A sample DDL file is included in this repo.
