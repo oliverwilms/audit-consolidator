@@ -17,7 +17,9 @@ Command to run Audit Export Task now AND schedule the task to run it daily
 %SYS>w ##class(otw.audit.AuditExportTask).RunNow()
 1
 
-The Audit Export creates an XML file. I created a persistent consolidator class to hold the audit data from ALL my IRIS instances.
+The Audit Export creates an XML file and stores it in the mgr directory: /usr/irissys/mgr
+
+I created a persistent consolidator class to hold the audit data from ALL my IRIS instances.
 
 ## Consolidator Import Task
 
