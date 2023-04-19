@@ -79,7 +79,7 @@ ClassMethod Exists(
 /// Flags - Bit 0 - Do not import records, just return count
 /// Note: On failure, no records will be imported
 ClassMethod Import(
-	FileName As %String = "NTX-LT162748_auditexport.xml",
+	FileName As %String = "",
 	ByRef NumImported As %Integer,
 	Flags As %Integer = 0) As %Status
 {
