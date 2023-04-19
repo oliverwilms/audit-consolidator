@@ -1,4 +1,4 @@
-Class otw.audit.consolidator Extends (%Persistent, %XML.Adaptor) [ StorageStrategy = NewStorage1 ]
+Class otw.audit.consolidator Extends (%Persistent, %XML.Adaptor)
 {
 
 Index NewIndex1 On (UTCTimeStamp, SystemID, AuditIndex) [ IdKey, PrimaryKey, Unique ];
@@ -148,9 +148,10 @@ ClassMethod ImportAll() As %Status
 		Set tPath = $list(tRow, 1)
 		Set tFileName = ##class(%File).GetFilename(tPath)
 		Set tSC = ..Import(tFileName,.tNum)
+		If $$$ISERR(tSC) Quit
 		If tAtEnd Quit
 	}
-	Set tSC = ##class(%File).FileSetClose(.tHandle)
+	Set x = ##class(%File).FileSetClose(.tHandle)
 	Quit tSC
 }
 
@@ -291,6 +292,84 @@ Storage NewStorage1
 </SQLMap>
 <StreamLocation>^otw.audit.consolidatorS</StreamLocation>
 <Type>%Storage.SQL</Type>
+}
+
+Storage Default
+{
+<Data name="consolidatorDefaultData">
+<Value name="1">
+<Value>%%CLASSNAME</Value>
+</Value>
+<Value name="2">
+<Value>Authentication</Value>
+</Value>
+<Value name="3">
+<Value>CSPSessionID</Value>
+</Value>
+<Value name="4">
+<Value>ClientExecutableName</Value>
+</Value>
+<Value name="5">
+<Value>ClientIPAddress</Value>
+</Value>
+<Value name="6">
+<Value>Description</Value>
+</Value>
+<Value name="7">
+<Value>Event</Value>
+</Value>
+<Value name="8">
+<Value>EventData</Value>
+</Value>
+<Value name="9">
+<Value>EventSource</Value>
+</Value>
+<Value name="10">
+<Value>EventType</Value>
+</Value>
+<Value name="11">
+<Value>GroupName</Value>
+</Value>
+<Value name="12">
+<Value>JobId</Value>
+</Value>
+<Value name="13">
+<Value>JobNumber</Value>
+</Value>
+<Value name="14">
+<Value>Namespace</Value>
+</Value>
+<Value name="15">
+<Value>OSUsername</Value>
+</Value>
+<Value name="16">
+<Value>Pid</Value>
+</Value>
+<Value name="17">
+<Value>Roles</Value>
+</Value>
+<Value name="18">
+<Value>RoutineSpec</Value>
+</Value>
+<Value name="19">
+<Value>StartupClientIPAddress</Value>
+</Value>
+<Value name="20">
+<Value>Status</Value>
+</Value>
+<Value name="21">
+<Value>UserInfo</Value>
+</Value>
+<Value name="22">
+<Value>Username</Value>
+</Value>
+</Data>
+<DataLocation>^otw.audit.consolidatorD</DataLocation>
+<DefaultData>consolidatorDefaultData</DefaultData>
+<IdLocation>^otw.audit.consolidatorD</IdLocation>
+<IndexLocation>^otw.audit.consolidatorI</IndexLocation>
+<StreamLocation>^otw.audit.consolidatorS</StreamLocation>
+<Type>%Storage.Persistent</Type>
 }
 
 }
