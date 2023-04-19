@@ -140,4 +140,16 @@ ClassMethod AuditTransfer(
  quit tSC
 }
 
+ClassMethod CreateViewUserChange() As %Status
+{
+	Set tSC = $$$OK
+	&sql(CREATE VIEW UserChange 
+		AS SELECT AuditIndex, Description, Event, EventData, OSUsername, Roles, SystemID, UTCTimeStamp, Username
+		FROM otw_audit.consolidator WHERE Event='USERCHANGE')
+	IF SQLCODE=0 {WRITE "Created a view",!}
+	ELSEIF SQLCODE=-201 {WRITE "View already exists",!}
+	ELSE {WRITE "Serious SQL problem: ",SQLCODE," ",%msg,! }
+	Quit tSC
+}
+
 }
