@@ -131,6 +131,29 @@ ERROR
 	Quit tSC
 }
 
+ClassMethod ImportAll() As %Status
+{
+	Set tSC = $$$OK
+	Set tDir = $ZU(12)
+	Set tIncludeAllDirs = 0
+	Set tSortBy = ""
+	Set tSC = ##class(%File).FileSetExecute(.tHandle,tDir,"*.xml",tSortBy,tIncludeAllDirs)
+	If $$$ISERR(tSC) { Quit }
+	Set tAtEnd = 0
+	For {
+		Set tSC = ##class(%File).FileSetFetch(.tHandle, .tRow, .tAtEnd)
+		If '$$$ISOK(tSC)!($ListLength(tRow)<6) Quit
+		Set tFile = $List(tRow, 6)
+		Set tType = $List(tRow, 2)
+		Set tPath = $list(tRow, 1)
+		Set tFileName = ##class(%File).GetFilename(tPath)
+		Set tSC = ..Import(tFileName,.tNum)
+		If tAtEnd Quit
+	}
+	Set tSC = ##class(%File).FileSetClose(.tHandle)
+	Quit tSC
+}
+
 Storage NewStorage1
 {
 <SQLMap name="Map1">
