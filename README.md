@@ -8,7 +8,7 @@ IRIS Audit database logs many events such as login failures for example. It can 
 
 Why is this important? We have a rule to disable a user account if they have not logged in for a certain number of days.
 
-We have IRIS clusters with many IRIS instances. I like to run queries against audit data from ALL IRIS instances and identify user accounts which have not looged into ANY IRIS instance.
+We have IRIS clusters with many IRIS instances. I like to run queries against audit data from ALL IRIS instances and identify user accounts which have not logged into ANY IRIS instance.
 
 I like to export audit data from each IRIS instance and consolidate audit data into ONE database table to run queries against the consolidated audit data.
 
