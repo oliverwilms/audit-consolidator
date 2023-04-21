@@ -12,7 +12,7 @@ print(url)
 engine = create_engine(url)
 
 # export table to dataframe
-df = pd.read_sql_table('consolidator', engine_local, schema="otw_audit")
+df = pd.read_sql_table('consolidator', engine, schema="otw_audit")
 
 # print the dataframe
 print(df)
