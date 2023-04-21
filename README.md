@@ -15,10 +15,10 @@ I like to export audit data from each IRIS instance and consolidate audit data i
 ## Audit Export Task
 
 Command to run Audit Export Task now AND schedule the task to run it daily
-
+```
 %SYS>w ##class(otw.audit.AuditExportTask).RunNow()
 1
-
+```
 The Audit Export creates an XML file and stores it in the mgr directory: /usr/irissys/mgr
 
 I created a persistent consolidator class to hold the audit data from ALL my IRIS instances.
@@ -26,13 +26,13 @@ I created a persistent consolidator class to hold the audit data from ALL my IRI
 ## Consolidator Import Task
 
 Command to import all XML files in mgr directory
-
+```
 Do ##class(otw.audit.consolidator).ImportAll()
-
+```
 ## Create a SQL View for data related to USERCHANGE events
-
+```
 Do ##class(otw.audit.Util).CreateViewUserChange()
-
+```
 ## Copy Audit data to IRIS Cloud SQL deployment using SQLAlchemy-iris
 ```
 export ICSHOST='k8s-a34cb3c6-aa6428f3-181bcb4a5c-1d7a6ab2ab286107.elb.us-east-1.amazonaws.com'
@@ -49,7 +49,7 @@ You can find online demo here - [Management Portal](https://audit-consolidator.d
 A sample DDL file is included in this repo.
 
 ## Import SQL
-
+```
 LOAD DATA FROM FILE 'C://InterSystems/IRIS/mgr/audit.CSV'
 INTO otw_audit.consolidator1
 USING {
@@ -58,7 +58,7 @@ USING {
      "header":true
    }}}
 go
-
+```
 https://portal.sql-contest.isccloud.io/account/login
 
 ## Cloud Storage Adapter
