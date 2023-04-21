@@ -19,7 +19,7 @@ df2 = pd.read_sql_table('USERCHANGE', engine, schema="sqluser")
 # print the dataframe
 print(df2)
 
-cloudserver = 'aws-iscloud.intersystems'
+cloudserver = os.getenv('ICSHOST')
 cloudport = 1972
 cloudns = 'USER'
 clouduser = 'SQLAdmin'
