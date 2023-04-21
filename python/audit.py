@@ -27,7 +27,7 @@ cloudpw = os.getenv('ICSPASSWORD')
 
 cloudurl = f"iris://{clouduser}:{cloudpw}@{cloudserver}:{cloudport}/{cloudns}"
 print(cloudurl)
-engine_cloud = create_engine(url)
+engine_cloud = create_engine(cloudurl)
 
 # insert dataframe into table
 ##df.to_sql('consolidator', engine_cloud, schema="otw_audit" ,if_exists='replace', index=True,
