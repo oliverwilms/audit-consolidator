@@ -34,11 +34,11 @@ Do ##class(otw.audit.consolidator).ImportAll()
 Do ##class(otw.audit.Util).CreateViewUserChange()
 
 ## Copy Audit data to IRIS Cloud SQL deployment using SQLAlchemy-iris
-
+'''
 export ICSHOST='k8s-a34cb3c6-aa6428f3-181bcb4a5c-1d7a6ab2ab286107.elb.us-east-1.amazonaws.com'
 export ICSPASSWORD='Passw0rd123!'
 python3 python/audit.py
-
+'''
 ## Run DDL in IRIS Cloud SQL
 
 A sample DDL file is included in this repo.
