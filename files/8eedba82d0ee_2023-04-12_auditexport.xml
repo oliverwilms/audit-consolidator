@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuditExport>
+  <Audit>
+    <AuditIndex>352</AuditIndex>
+    <Authentication>4194304</Authentication>
+    <Description>Export audit data</Description>
+    <Event>AuditChange</Event>
+    <EventData>Exported 29 audit records:
+Begin Date:         Beginning (2023-04-09 21:37:04.637)
+End Date:           2023-04-11
+Event Sources:      *
+Event Types:        *
+Events:             *
+Usernames:          *
+System IDs:         *
+FileName:           8eedba82d0ee_2023-04-11_auditexport.xml
+</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>393243</JobId>
+    <JobNumber>27</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>29194</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>8eedba82d0ee:IRIS</SystemID>
+    <Username>_SYSTEM</Username>
+    <UTCTimeStamp>2023-04-11 00:02:00.098</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>351</AuditIndex>
+    <Authentication>4194304</Authentication>
+    <Description>Export audit data</Description>
+    <Event>AuditChange</Event>
+    <EventData>Export audit records:
+Begin Date:         Beginning (2023-04-09 21:37:04.637)
+End Date:           2023-04-11
+Event Sources:      *
+Event Types:        *
+Events:             *
+Usernames:          *
+System IDs:         *
+FileName:           8eedba82d0ee_2023-04-11_auditexport.xml
+</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>393243</JobId>
+    <JobNumber>27</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>29194</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>8eedba82d0ee:IRIS</SystemID>
+    <Username>_SYSTEM</Username>
+    <UTCTimeStamp>2023-04-11 00:02:00.070</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>350</AuditIndex>
+    <Authentication>64</Authentication>
+    <Description>Delete audit data</Description>
+    <Event>AuditChange</Event>
+    <EventData>Deleted 0 audit records:
+Begin Date:         Beginning (2023-04-09 21:37:04.637)
+End Date:           2023-02-08 00:01:00
+Event Sources:      *
+Event Types:        *
+Events:             *
+Usernames:          *
+System IDs:         *
+</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>327707</JobId>
+    <JobNumber>27</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>29175</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>8eedba82d0ee:IRIS</SystemID>
+    <Username>_SYSTEM</Username>
+    <UTCTimeStamp>2023-04-11 00:01:00.063</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>349</AuditIndex>
+    <Authentication>64</Authentication>
+    <Description>Delete audit data</Description>
+    <Event>AuditChange</Event>
+    <EventData>Delete audit records:
+Begin Date:         Beginning (2023-04-09 21:37:04.637)
+End Date:           2023-02-08 00:01:00
+Event Sources:      *
+Event Types:        *
+Events:             *
+Usernames:          *
+System IDs:         *
+</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>327707</JobId>
+    <JobNumber>27</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>29175</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>8eedba82d0ee:IRIS</SystemID>
+    <Username>_SYSTEM</Username>
+    <UTCTimeStamp>2023-04-11 00:01:00.061</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>348</AuditIndex>
+    <Authentication>64</Authentication>
+    <Description>Modify Task Purge Audit Database</Description>
+    <Event>ConfigurationChange</Event>
+    <EventSource>%System</EventSource>
+    <EventType>%System</EventType>
+    <JobId>589842</JobId>
+    <JobNumber>18</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>29152</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>8eedba82d0ee:IRIS</SystemID>
+    <Username>_SYSTEM</Username>
+    <UTCTimeStamp>2023-04-11 00:00:00.067</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>347</AuditIndex>
+    <Authentication>4194304</Authentication>
+    <Description>Export audit data</Description>
+    <Event>AuditChange</Event>
+    <EventData>Exported 24 audit records:
+Begin Date:         Beginning (2023-04-09 21:37:04.637)
+End Date:           2023-04-10
+Event Sources:      *
+Event Types:        *
+Events:             *
+Usernames:          *
+System IDs:         *
+FileName:           8eedba82d0ee_2023-04-10_auditexport.xml
+</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>327698</JobId>
+    <JobNumber>18</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>3250</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>8eedba82d0ee:IRIS</SystemID>
+    <Username>_SYSTEM</Username>
+    <UTCTimeStamp>2023-04-10 00:02:00.217</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>346</AuditIndex>
+    <Authentication>4194304</Authentication>
+    <Description>Export audit data</Description>
+    <Event>AuditChange</Event>
+    <EventData>Export audit records:
+Begin Date:         Beginning (2023-04-09 21:37:04.637)
+End Date:           2023-04-10
+Event Sources:      *
+Event Types:        *
+Events:             *
+Usernames:          *
+System IDs:         *
+FileName:           8eedba82d0ee_2023-04-10_auditexport.xml
+</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>327698</JobId>
+    <JobNumber>18</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>3250</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>8eedba82d0ee:IRIS</SystemID>
+    <Username>_SYSTEM</Username>
+    <UTCTimeStamp>2023-04-10 00:02:00.209</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>345</AuditIndex>
+    <Authentication>64</Authentication>
+    <Description>Delete audit data</Description>
+    <Event>AuditChange</Event>
+    <EventData>Deleted 318 audit records:
+Begin Date:         Beginning (2023-01-30 19:05:46.475)
+End Date:           2023-02-07 00:01:00
+Event Sources:      *
+Event Types:        *
+Events:             *
+Usernames:          *
+System IDs:         *
+</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>262162</JobId>
+    <JobNumber>18</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>3231</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>8eedba82d0ee:IRIS</SystemID>
+    <Username>_SYSTEM</Username>
+    <UTCTimeStamp>2023-04-10 00:01:00.257</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>344</AuditIndex>
+    <Authentication>64</Authentication>
+    <Description>Delete audit data</Description>
+    <Event>AuditChange</Event>
+    <EventData>Delete audit records:
+Begin Date:         Beginning (2023-01-30 19:05:46.475)
+End Date:           2023-02-07 00:01:00
+Event Sources:      *
+Event Types:        *
+Events:             *
+Usernames:          *
+System IDs:         *
+</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>262162</JobId>
+    <JobNumber>18</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>3231</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>8eedba82d0ee:IRIS</SystemID>
+    <Username>_SYSTEM</Username>
+    <UTCTimeStamp>2023-04-10 00:01:00.204</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>343</AuditIndex>
+    <Authentication>64</Authentication>
+    <Description>Modify Task Purge Audit Database</Description>
+    <Event>ConfigurationChange</Event>
+    <EventSource>%System</EventSource>
+    <EventType>%System</EventType>
+    <JobId>131089</JobId>
+    <JobNumber>17</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>3208</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>8eedba82d0ee:IRIS</SystemID>
+    <Username>_SYSTEM</Username>
+    <UTCTimeStamp>2023-04-10 00:00:00.213</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>342</AuditIndex>
+    <Authentication>4194304</Authentication>
+    <Description>Export audit data</Description>
+    <Event>AuditChange</Event>
+    <EventData>Exported 318 audit records:
+Begin Date:         Beginning (2023-01-30 19:05:46.475)
+End Date:           2023-04-09
+Event Sources:      *
+Event Types:        *
+Events:             *
+Usernames:          *
+System IDs:         *
+FileName:           8eedba82d0ee_2023-04-09_auditexport.xml
+</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>65570</JobId>
+    <JobNumber>34</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>846</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>8eedba82d0ee:IRIS</SystemID>
+    <Username>_SYSTEM</Username>
+    <UTCTimeStamp>2023-04-09 21:48:00.317</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>341</AuditIndex>
+    <Authentication>4194304</Authentication>
+    <Description>Export audit data</Description>
+    <Event>AuditChange</Event>
+    <EventData>Export audit records:
+Begin Date:         Beginning (2023-01-30 19:05:46.475)
+End Date:           2023-04-09
+Event Sources:      *
+Event Types:        *
+Events:             *
+Usernames:          *
+System IDs:         *
+FileName:           8eedba82d0ee_2023-04-09_auditexport.xml
+</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>65570</JobId>
+    <JobNumber>34</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>846</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>8eedba82d0ee:IRIS</SystemID>
+    <Username>_SYSTEM</Username>
+    <UTCTimeStamp>2023-04-09 21:48:00.077</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>340</AuditIndex>
+    <Authentication>16</Authentication>
+    <Description>Modify Task Export Audit Data</Description>
+    <Event>ConfigurationChange</Event>
+    <EventSource>%System</EventSource>
+    <EventType>%System</EventType>
+    <JobId>65569</JobId>
+    <JobNumber>33</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>827</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>8eedba82d0ee:IRIS</SystemID>
+    <Username>irisowner</Username>
+    <UTCTimeStamp>2023-04-09 21:47:57.511</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>339</AuditIndex>
+    <Authentication>16</Authentication>
+    <Description>Run task Export Audit Data now</Description>
+    <Event>ConfigurationChange</Event>
+    <EventSource>%System</EventSource>
+    <EventType>%System</EventType>
+    <JobId>65569</JobId>
+    <JobNumber>33</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>827</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>8eedba82d0ee:IRIS</SystemID>
+    <Username>irisowner</Username>
+    <UTCTimeStamp>2023-04-09 21:47:57.510</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>338</AuditIndex>
+    <Authentication>16</Authentication>
+    <Description>Create Task Export Audit Data</Description>
+    <Event>ConfigurationChange</Event>
+    <EventSource>%System</EventSource>
+    <EventType>%System</EventType>
+    <JobId>65569</JobId>
+    <JobNumber>33</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>827</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>8eedba82d0ee:IRIS</SystemID>
+    <Username>irisowner</Username>
+    <UTCTimeStamp>2023-04-09 21:47:57.509</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>337</AuditIndex>
+    <Authentication>0</Authentication>
+    <Description>Startup</Description>
+    <Event>Start</Event>
+    <EventSource>%System</EventSource>
+    <EventType>%System</EventType>
+    <JobId>65549</JobId>
+    <JobNumber>13</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>445</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>8eedba82d0ee:IRIS</SystemID>
+    <UTCTimeStamp>2023-04-09 21:37:50.776</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>336</AuditIndex>
+    <Authentication>0</Authentication>
+    <Description>Auditing started</Description>
+    <Event>AuditChange</Event>
+    <EventData>Auditing started to database /usr/irissys/mgr/irisaudit/</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>65549</JobId>
+    <JobNumber>13</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>445</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>8eedba82d0ee:IRIS</SystemID>
+    <UTCTimeStamp>2023-04-09 21:37:50.770</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>335</AuditIndex>
+    <Authentication>1024</Authentication>
+    <Description>Auditing stopped</Description>
+    <Event>AuditChange</Event>
+    <EventData>Auditing to database /usr/irissys/mgr/irisaudit/ stopped</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>196621</JobId>
+    <JobNumber>13</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>606</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>buildkitsandbox:IRIS</SystemID>
+    <Username>%System</Username>
+    <UTCTimeStamp>2023-04-09 21:37:08.901</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>334</AuditIndex>
+    <Authentication>1024</Authentication>
+    <Description>Shutdown</Description>
+    <Event>Stop</Event>
+    <EventSource>%System</EventSource>
+    <EventType>%System</EventType>
+    <JobId>196621</JobId>
+    <JobNumber>13</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>606</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>buildkitsandbox:IRIS</SystemID>
+    <Username>%System</Username>
+    <UTCTimeStamp>2023-04-09 21:37:08.900</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>333</AuditIndex>
+    <Authentication>1024</Authentication>
+    <Description>Execute O/S command</Description>
+    <Event>OSCommand</Event>
+    <EventData>Execute O/S command
+Directory: /usr/irissys/mgr/
+Command:   sh -c &quot;kill -TERM 444 &gt; /dev/null 2&gt;&amp;1&quot;
+Flags:     /SHELL</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%System</EventType>
+    <JobId>196621</JobId>
+    <JobNumber>13</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>606</Pid>
+    <Roles>%All</Roles>
+    <RoutineSpec>zStopWebServer+14^Config.Startup.1 |"^^/usr/irissys/mgr/"|</RoutineSpec>
+    <Status>MQ==</Status>
+    <SystemID>buildkitsandbox:IRIS</SystemID>
+    <Username>%System</Username>
+    <UTCTimeStamp>2023-04-09 21:37:08.873</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>332</AuditIndex>
+    <Authentication>1024</Authentication>
+    <Description>Set switch 22</Description>
+    <Event>ConfigurationChange</Event>
+    <EventData>Set switch 22</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%System</EventType>
+    <JobId>196621</JobId>
+    <JobNumber>13</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>606</Pid>
+    <Roles>%All</Roles>
+    <RoutineSpec>INT1+50^SHUTDOWN |"^^/usr/irissys/mgr/"|</RoutineSpec>
+    <Status>MQ==</Status>
+    <SystemID>buildkitsandbox:IRIS</SystemID>
+    <Username>%System</Username>
+    <UTCTimeStamp>2023-04-09 21:37:08.853</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>331</AuditIndex>
+    <Authentication>1024</Authentication>
+    <Description>Set switch 19</Description>
+    <Event>ConfigurationChange</Event>
+    <EventData>Set switch 19</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%System</EventType>
+    <JobId>196621</JobId>
+    <JobNumber>13</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>606</Pid>
+    <Roles>%All</Roles>
+    <RoutineSpec>SWTCHON+6^SHUTDOWN |"^^/usr/irissys/mgr/"|</RoutineSpec>
+    <Status>MQ==</Status>
+    <SystemID>buildkitsandbox:IRIS</SystemID>
+    <Username>%System</Username>
+    <UTCTimeStamp>2023-04-09 21:37:07.848</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>330</AuditIndex>
+    <Authentication>1024</Authentication>
+    <Description>Set switch 12</Description>
+    <Event>ConfigurationChange</Event>
+    <EventData>Set switch 12</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%System</EventType>
+    <JobId>196621</JobId>
+    <JobNumber>13</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>606</Pid>
+    <Roles>%All</Roles>
+    <RoutineSpec>SWTCHON+4^SHUTDOWN |"^^/usr/irissys/mgr/"|</RoutineSpec>
+    <Status>MQ==</Status>
+    <SystemID>buildkitsandbox:IRIS</SystemID>
+    <Username>%System</Username>
+    <UTCTimeStamp>2023-04-09 21:37:07.848</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>329</AuditIndex>
+    <Authentication>1024</Authentication>
+    <Description>Set switch 9</Description>
+    <Event>ConfigurationChange</Event>
+    <EventData>Set switch 9</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%System</EventType>
+    <JobId>196621</JobId>
+    <JobNumber>13</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>606</Pid>
+    <Roles>%All</Roles>
+    <RoutineSpec>SWTCHON+3^SHUTDOWN |"^^/usr/irissys/mgr/"|</RoutineSpec>
+    <Status>MQ==</Status>
+    <SystemID>buildkitsandbox:IRIS</SystemID>
+    <Username>%System</Username>
+    <UTCTimeStamp>2023-04-09 21:37:07.848</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>328</AuditIndex>
+    <Authentication>1024</Authentication>
+    <Description>Set switch 16</Description>
+    <Event>ConfigurationChange</Event>
+    <EventData>Set switch 16</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%System</EventType>
+    <JobId>196621</JobId>
+    <JobNumber>13</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>606</Pid>
+    <Roles>%All</Roles>
+    <RoutineSpec>SWTCHON+2^SHUTDOWN |"^^/usr/irissys/mgr/"|</RoutineSpec>
+    <Status>MQ==</Status>
+    <SystemID>buildkitsandbox:IRIS</SystemID>
+    <Username>%System</Username>
+    <UTCTimeStamp>2023-04-09 21:37:07.848</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>327</AuditIndex>
+    <Authentication>0</Authentication>
+    <Description>Create SSL configuration ISC.FeatureTracker.SSL.Config</Description>
+    <Event>SSLConfigChange</Event>
+    <EventData>Create SSL configuration: ISC.FeatureTracker.SSL.Config
+CAFile:             
+CAPath:             
+CRLFile:            
+CertificateFile:    
+CipherList:         ALL:!aNULL:!eNULL:!EXP:!SSLv2
+Ciphersuites:       TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256
+Description:        
+DiffieHellmanBits:  0
+Enabled:            1
+PrivateKeyFile:     
+PrivateKeyType:     2
+Protocols:          
+SNIName:            
+TLSMaxVersion:      32
+TLSMinVersion:      16
+Type:               0
+VerifyDepth:        9
+VerifyPeer:         0
+OCSP:               0
+OCSPURL:            
+OCSPIssuerCert:     
+OCSPResponseFile:   
+OCSPRequestFailures:0
+OCSPTimeout:        2
+</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>65559</JobId>
+    <JobNumber>23</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>592</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>buildkitsandbox:IRIS</SystemID>
+    <UTCTimeStamp>2023-04-09 21:37:04.923</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>326</AuditIndex>
+    <Authentication>0</Authentication>
+    <Description>Delete SSL configuration ISC.FeatureTracker.SSL.Config</Description>
+    <Event>SSLConfigChange</Event>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>65559</JobId>
+    <JobNumber>23</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>592</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>buildkitsandbox:IRIS</SystemID>
+    <UTCTimeStamp>2023-04-09 21:37:04.909</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>325</AuditIndex>
+    <Authentication>16</Authentication>
+    <Description>Modify User _SYSTEM</Description>
+    <Event>UserChange</Event>
+    <EventData>Modify User: _SYSTEM
+
+Change Password modified:
+  New value: 0
+  Old value: 1
+
+--------------------------------------------------
+Current values:
+AccountNeverExpires:  Yes
+Attributes:           
+Comment:              
+EmailAddress:         
+Enabled:              Yes
+ExpirationDate:       
+Full Name:            SQL System Manager
+NameSpace:            
+Password:             *****
+Password Hash AlgorithSHA512
+Password Hash Work Fac10000
+PasswordNeverExpires: No
+PhoneNumber:          
+PhoneProvider:        
+AutheEnabled:         
+Roles:                %All
+Routine:              
+</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>131085</JobId>
+    <JobNumber>13</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>445</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>buildkitsandbox:IRIS</SystemID>
+    <Username>irisowner</Username>
+    <UTCTimeStamp>2023-04-09 21:37:04.725</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>324</AuditIndex>
+    <Authentication>16</Authentication>
+    <Description>Modify User _Ensemble</Description>
+    <Event>UserChange</Event>
+    <EventData>Modify User: _Ensemble
+
+Change Password modified:
+  New value: 0
+  Old value: 1
+
+--------------------------------------------------
+Current values:
+AccountNeverExpires:  Yes
+Attributes:           
+Comment:              
+EmailAddress:         
+Enabled:              Yes
+ExpirationDate:       
+Full Name:            Interoperability Manager (Internal use - not for login)
+NameSpace:            
+Password:             *****
+Password Hash AlgorithN/A
+Password Hash Work Fac1024
+PasswordNeverExpires: Yes
+PhoneNumber:          
+PhoneProvider:        
+AutheEnabled:         
+Roles:                %All
+Routine:              
+</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>131085</JobId>
+    <JobNumber>13</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>445</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>buildkitsandbox:IRIS</SystemID>
+    <Username>irisowner</Username>
+    <UTCTimeStamp>2023-04-09 21:37:04.724</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>323</AuditIndex>
+    <Authentication>16</Authentication>
+    <Description>Modify User SuperUser</Description>
+    <Event>UserChange</Event>
+    <EventData>Modify User: SuperUser
+
+Change Password modified:
+  New value: 0
+  Old value: 1
+
+--------------------------------------------------
+Current values:
+AccountNeverExpires:  Yes
+Attributes:           
+Comment:              
+EmailAddress:         
+Enabled:              Yes
+ExpirationDate:       
+Full Name:            System Super user
+NameSpace:            
+Password:             *****
+Password Hash AlgorithSHA512
+Password Hash Work Fac10000
+PasswordNeverExpires: No
+PhoneNumber:          
+PhoneProvider:        
+AutheEnabled:         
+Roles:                %All
+Routine:              
+</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>131085</JobId>
+    <JobNumber>13</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>445</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>buildkitsandbox:IRIS</SystemID>
+    <Username>irisowner</Username>
+    <UTCTimeStamp>2023-04-09 21:37:04.722</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>322</AuditIndex>
+    <Authentication>16</Authentication>
+    <Description>Modify User IAM</Description>
+    <Event>UserChange</Event>
+    <EventData>Modify User: IAM
+
+Change Password modified:
+  New value: 0
+  Old value: 1
+
+--------------------------------------------------
+Current values:
+AccountNeverExpires:  Yes
+Attributes:           
+Comment:              
+EmailAddress:         
+Enabled:              No
+ExpirationDate:       
+Full Name:            User for /api/iam Web Application
+NameSpace:            
+Password:             *****
+Password Hash AlgorithSHA512
+Password Hash Work Fac10000
+PasswordNeverExpires: Yes
+PhoneNumber:          
+PhoneProvider:        
+AutheEnabled:         
+Roles:                %IAM_API
+Routine:              
+</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>131085</JobId>
+    <JobNumber>13</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>445</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>buildkitsandbox:IRIS</SystemID>
+    <Username>irisowner</Username>
+    <UTCTimeStamp>2023-04-09 21:37:04.721</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>321</AuditIndex>
+    <Authentication>16</Authentication>
+    <Description>Modify User Admin</Description>
+    <Event>UserChange</Event>
+    <EventData>Modify User: Admin
+
+Change Password modified:
+  New value: 0
+  Old value: 1
+
+--------------------------------------------------
+Current values:
+AccountNeverExpires:  Yes
+Attributes:           
+Comment:              
+EmailAddress:         
+Enabled:              Yes
+ExpirationDate:       
+Full Name:            System Administrator
+NameSpace:            
+Password:             *****
+Password Hash AlgorithSHA512
+Password Hash Work Fac10000
+PasswordNeverExpires: No
+PhoneNumber:          
+PhoneProvider:        
+AutheEnabled:         
+Roles:                %EnsRole_Administrator,%EnsRole_Developer,%Manager
+Routine:              
+</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>131085</JobId>
+    <JobNumber>13</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>445</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>buildkitsandbox:IRIS</SystemID>
+    <Username>irisowner</Username>
+    <UTCTimeStamp>2023-04-09 21:37:04.720</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>320</AuditIndex>
+    <Authentication>0</Authentication>
+    <Description>Startup</Description>
+    <Event>Start</Event>
+    <EventSource>%System</EventSource>
+    <EventType>%System</EventType>
+    <JobId>65549</JobId>
+    <JobNumber>13</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>422</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>buildkitsandbox:IRIS</SystemID>
+    <UTCTimeStamp>2023-04-09 21:37:04.644</UTCTimeStamp>
+  </Audit>
+  <Audit>
+    <AuditIndex>319</AuditIndex>
+    <Authentication>0</Authentication>
+    <Description>Auditing started</Description>
+    <Event>AuditChange</Event>
+    <EventData>Auditing started to database /usr/irissys/mgr/irisaudit/</EventData>
+    <EventSource>%System</EventSource>
+    <EventType>%Security</EventType>
+    <JobId>65549</JobId>
+    <JobNumber>13</JobNumber>
+    <Namespace>%SYS</Namespace>
+    <OSUsername>irisowner</OSUsername>
+    <Pid>422</Pid>
+    <Roles>%All</Roles>
+    <Status>MQ==</Status>
+    <SystemID>buildkitsandbox:IRIS</SystemID>
+    <UTCTimeStamp>2023-04-09 21:37:04.637</UTCTimeStamp>
+  </Audit>
+</AuditExport>
