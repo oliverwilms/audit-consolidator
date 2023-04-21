@@ -25,7 +25,19 @@ I created a persistent consolidator class to hold the audit data from ALL my IRI
 
 ## Consolidator Import Task
 
-We created a classMethod to import an XML file into the consolidator table. We masked IP address due to security reasons.
+Command to import all XML files in mgr directory
+
+Do ##class(otw.audit.consolidator).ImportAll()
+
+## Create a SQL View for data related to USERCHANGE events
+
+Do ##class(otw.audit.Util).CreateViewUserChange()
+
+## Copy Audit data to IRIS Cloud SQL deployment using SQLAlchemy-iris
+
+export ICSHOST='k8s-a34cb3c6-aa6428f3-181bcb4a5c-1d7a6ab2ab286107.elb.us-east-1.amazonaws.com'
+export ICSPASSWORD='Passw0rd123!'
+python3 python/audit.py
 
 ## Run DDL in IRIS Cloud SQL
 
