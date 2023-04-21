@@ -13,10 +13,11 @@ print(url)
 engine = create_engine(url)
 
 # export table to dataframe
-df = pd.read_sql_table('consolidator', engine, schema="otw_audit")
+df1 = pd.read_sql_table('consolidator', engine, schema="otw_audit")
+df2 = pd.read_sql_table('USERCHANGE', engine, schema="sqluser")
 
 # print the dataframe
-print(df)
+print(df2)
 
 cloudserver = 'aws-iscloud.intersystems'
 cloudport = 1972
