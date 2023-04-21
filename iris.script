@@ -6,6 +6,7 @@ Do ##class(%SYS.System).WriteToConsoleLog("Running iris.script: zpm load",0,0)
 zn "%SYS"
 zpm "load /home/irisowner/irisdev/ -v":1
 Do ##class(%SYS.System).WriteToConsoleLog("Running iris.script: zpm load is done",0,0)
+zpm "install webterminal"
 // Import All files
 Do ##class(%SYS.System).WriteToConsoleLog("Running iris.script: import files",0,0)
 Do ##class(otw.audit.consolidator).ImportAll()
