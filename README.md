@@ -16,8 +16,7 @@ I like to export audit data from each IRIS instance and consolidate audit data i
 
 Command to run Audit Export Task now AND schedule the task to run it daily
 ```
-%SYS>w ##class(otw.audit.AuditExportTask).RunNow()
-1
+Do ##class(otw.audit.AuditExportTask).RunNow()
 ```
 The Audit Export creates an XML file and stores it in the mgr directory: /usr/irissys/mgr
 
