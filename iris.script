@@ -1,11 +1,18 @@
 // Unexpire passwords to simplify dev mode. Comment these two lines for Production use
 zn "%SYS"
 Do ##class(Security.Users).UnExpireUserPasswords("*")
-
+Do ##class(%SYS.System).WriteToConsoleLog("Running iris.script: zpm load",0,0)
 // load all the code of the project as a ZPM package
 zn "%SYS"
 zpm "load /home/irisowner/irisdev/ -v":1:1
-
+Do ##class(%SYS.System).WriteToConsoleLog("Running iris.script: zpm load is done",0,0)
+// Import All files
+Do ##class(%SYS.System).WriteToConsoleLog("Running iris.script: import files",0,0)
+Do ##class(otw.audit.consolidator).ImportAll()
 // Run Task Now and Schedule to Run Daily
+Do ##class(%SYS.System).WriteToConsoleLog("Running iris.script: schedule task",0,0)
 Do ##class(otw.audit.AuditExportTask).RunNow()
+// Create View UserChange
+Do ##class(%SYS.System).WriteToConsoleLog("Running iris.script: create view",0,0)
+Do ##class(otw.audit.Util).CreateViewUserChange()
 halt
