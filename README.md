@@ -39,6 +39,11 @@ export ICSHOST='k8s-a34cb3c6-aa6428f3-181bcb4a5c-1d7a6ab2ab286107.elb.us-east-1.
 export ICSPASSWORD='Passw0rd123!'
 python3 python/audit.py
 ```
+## Online Demo
+You can find online demo here - [Management Portal](https://audit-consolidator.demo.community.intersystems.com/csp/sys/UtilHome.csp)
+
+[webterminal](https://audit-consolidator.demo.community.intersystems.com/terminal/)
+
 ## Run DDL in IRIS Cloud SQL
 
 A sample DDL file is included in this repo.
