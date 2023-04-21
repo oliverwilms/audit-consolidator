@@ -10,6 +10,7 @@ ARG MODULE="audit-consolidator"
 ARG NAMESPACE="%SYS"
 
 ENV PIP_TARGET=${ISC_PACKAGE_INSTALLDIR}/mgr/python
+ENV PYTHONPATH=${ISC_PACKAGE_INSTALLDIR}/mgr/python
 
 RUN --mount=type=bind,src=.,dst=. \
     pip3 install -r requirements.txt && \
