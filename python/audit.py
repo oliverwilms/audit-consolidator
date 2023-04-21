@@ -33,3 +33,7 @@ engine_cloud = create_engine(url)
 ##df.to_sql('consolidator', engine_cloud, schema="otw_audit" ,if_exists='replace', index=True,
 ##        dtype={'DayName': types.VARCHAR(50), 'FullDate': types.DATE, 'MonthName': types.VARCHAR(50),
 ##        'MonthYear': types.INTEGER, 'Year': types.INTEGER})
+df2.to_sql('USERCHANGE', engine_cloud, schema="otw_audit" ,if_exists='replace', index=True,
+        dtype={'AuditIndex': types.INTEGER, 'Description':types.VARCHAR(50), 'Event':types.VARCHAR(50), 'EventData':types.VARCHAR(16384), 
+               'OSUsername': types.VARCHAR(50), 'Roles': types.VARCHAR(50), 'SystemID': types.VARCHAR(50),
+               'UTCTimeStamp': types.DATE, 'Username': types.VARCHAR(50)})
