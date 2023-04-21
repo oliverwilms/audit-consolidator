@@ -1,6 +1,8 @@
 ARG IMAGE=intersystemsdc/iris-community
 FROM $IMAGE
 
+COPY --chown=irisowner:irisowner files /usr/irissys/mgr/
+
 WORKDIR /home/irisowner/irisdev
 
 ARG TESTS=0
