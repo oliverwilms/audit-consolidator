@@ -1,4 +1,5 @@
 from sqlalchemy import create_engine
+import os as os
 import pandas as pd
 
 server = 'localhost'
@@ -17,7 +18,16 @@ df = pd.read_sql_table('consolidator', engine, schema="otw_audit")
 # print the dataframe
 print(df)
 
-##engine_cloud = create_engine('iris://SQLAdmin:mypassword@aws-iscloud.intersystems:1972/USER')
+cloudserver = 'aws-iscloud.intersystems'
+cloudport = 1972
+cloudns = 'USER'
+clouduser = 'SQLAdmin'
+cloudpw = os.getenv('ICSPASSWORD')
+
+cloudurl = f"iris://{clouduser}:{cloudpw}@{cloudserver}:{cloudport}/{cloudns}"
+print(cloudurl)
+engine_cloud = create_engine(url)
+
 # insert dataframe into table
 ##df.to_sql('consolidator', engine_cloud, schema="otw_audit" ,if_exists='replace', index=True,
 ##        dtype={'DayName': types.VARCHAR(50), 'FullDate': types.DATE, 'MonthName': types.VARCHAR(50),
